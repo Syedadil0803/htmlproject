@@ -219,9 +219,43 @@ Used daily in real project commands
 20. git diff – See the difference between versions
 
 
+Bootstrap
 
-Bootstrap (RWD)
+UTF-8
+1.Unicode Transformation Format is used as 8-bit in html-5, to make our site globally readable and adaptable.
 
-Responsive web designs
+2.UTF-8 is used to encode all the characters in the world. It is used to encode all
 
-Bootstrap is a CSS framework that helps you build responsive and modern websites quickly using pre-designed components.
+3. Amoung 8-bits english is occupied as 1-bit.
+
+4.Meta tags are used for SEO purpose (Search-Engine-Optimization)
+
+5. In html-4 we have UTF as 4 bit (UTF-4) i.e can be used only for single languages.
+
+
+RWD
+Responsive Web Design
+1.Bootstrap will adjust components based on the screen size.
+2.Bootstrap is a CSS framework that helps you build responsive and modern websites quickly using pre-designed components.
+
+1. layout
+2. Grid System
+
+Layout Examples :-
+
+mobile <576px
+mobile large screen ≥576px
+Tablets ≥768px
+Laptops ≥992px
+Desktop/Projectors ≥1200px
+
+Grid System Works on 12 columns system i.e need to call the col between 12 only
+like
+col-sm-2
+col-md-8
+col-sm-2
+
+These column should be called inside a row.
+
+Whenever we call a row a column should also be called accordingly.
+we cant call row inside a row & column inside a column.
