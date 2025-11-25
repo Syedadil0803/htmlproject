@@ -271,3 +271,40 @@ These column should be called inside a row.
 
 Whenever we call a row a column should also be called accordingly.
 we cant call row inside a row & column inside a column.
+
+
+Javascrpit Variables
+1. let (local scoped)
+2. var (global scoped)
+3. const (constant)
+
+Local Scoped (let):
+a variable cannot be accessed outside a function without defining.
+
+Global Scope (var):
+a variable can be accessed outside a function without defining.
+
+print statement in Document Page:
+docoment.write(variable);
+
+Debugging:
+console.log(variable)
+
+
+data types in js
+1.primitive
+2.non-primitive
+
+1. Primitive Data Types
+a. String: Textual data.
+b. Number: Integers, floating-point numbers.
+c. Boolean: Logical values (true or false).
+d. Undefined: Variable declared but not assigned a value
+e. Null: Intentional absence of value.
+f. Symbol: Unique identifiers (ES6). (ES6= ECMAScrpit 2015 (ES6))
+
+
+2.  Non-Primitive Data Types
+a. Object: Key-value pairs. {}
+b. Array: Indexed collections. []
+c .Function: Reusable blocks of code. ()
