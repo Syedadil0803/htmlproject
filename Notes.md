@@ -272,6 +272,7 @@ These column should be called inside a row.
 Whenever we call a row a column should also be called accordingly.
 we cant call row inside a row & column inside a column.
 
+JS
 
 Javascrpit Variables
 1. let (local scoped)
