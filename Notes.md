@@ -272,6 +272,9 @@ These column should be called inside a row.
 Whenever we call a row a column should also be called accordingly.
 we cant call row inside a row & column inside a column.
 
+The <span> tag in HTML is an inline container used to style, highlight, or manipulate a specific portion of text or content without breaking the flow of the line. It’s commonly used with CSS or JavaScript to apply styles or add interactivity to small parts of a webpage.
+
+
 JS
 
 Javascrpit Variables
@@ -348,7 +351,7 @@ h. --      Decrement          let x =5;     x--  =     4
 2. Assignment Operators= Used to assign values to variables.
 
 Operator | Description         | Example        | Equivalent To
-a. =        Assignment            x = 10
+a. =        Assignment            x = 10              x = 10
 b. +=      Add and Assign.        x += 5              x = x + 5
 c. -=    Subtract and Assign      x -= 5              x = x - 5
 d. *=    Multiply and Assign      x *= 5              x = x * 5
@@ -360,11 +363,11 @@ g. **=   Exponentiation Assign.   x **= 2             x = x ** 2
 
 Operator | Description      | Example           | Result
 
-a. (==).    Equal to           5== "5"                TRUE
-b. (===).   Strict equal       5===5                 True
+a. (==)     Equal to           5== "5"                TRUE
+b. (===)    Strict equal       5===5                 True
 c.  ===       (type+value)       5 === "5"           FALSE
 d. !=       Not equal.           5 != "5"            FALSE
-e. !==    Strict not equal       5 !== "5".          TRUE
+e. !==    Strict not equal       5 !== "5"           TRUE
 f. >      Greater than           5 > 3               TRUE
 g.<       Less than              5 < 3               FALSE
 h. >=   Greater than or equal    5 >= 5              TRUE
