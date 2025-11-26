@@ -14,82 +14,89 @@
 <body>
     <div class="container py-5">
 
+        <div class="row">
+            <!-- FORM -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="mb-4">Employee Form</h3>
 
-        <div class="card shadow-sm mb-4">
-            <div class="card-body">
-                <h3 class="mb-4">Employee Form</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Full Name*</label>
+                                <input type="text" class="form-control" placeholder="Enter full name">
+                            </div>
 
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">Full Name*</label>
-                        <input type="text" class="form-control" placeholder="Enter full name">
+                            <div class="mb-3">
+                                <label class="form-label">Email Id</label>
+                                <input type="email" class="form-control" placeholder="Enter email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Salary</label>
+                                <input type="number" class="form-control" placeholder="Enter salary">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control" placeholder="Enter city">
+                            </div>
+
+                            <div class="text-end">
+                                <button class="btn btn-dark w-20">Submit</button>
+                                <button class="btn btn-dark w-20">Update</button>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email Id</label>
-                        <input type="email" class="form-control" placeholder="Enter email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Salary</label>
-                        <input type="number" class="form-control" placeholder="Enter salary">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">City</label>
-                        <input type="text" class="form-control" placeholder="Enter city">
-                    </div>
-
-                    <button class="btn btn-dark w-20">Submit</button>
-                </form>
-            </div>
-        </div>
-
-
-        <div class="card shadow-sm">
-            <div class="card-body">
-
-
-
-                <div class="table-responsive">
-                    <table class="table table-bordered align-middle text-center">
-                        <thead class="table-secondary">
-                            <tr>
-                                <th>Full Name</th>
-                                <th>Email Id</th>
-                                <th>Salary</th>
-                                <th>City</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Pawan</td>
-                                <td>pk2369401@hgmail.com</td>
-                                <td>100000</td>
-                                <td>Bihar</td>
-                                <td>
-                                    <button class="btn btn-sm ">Edit</button>
-                                    <button class="btn btn-sm ">Delete</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>rahuk</td>
-                                <td>rahul@gmail.com</td>
-                                <td>20000</td>
-                                <td>delhi</td>
-                                <td>
-                                    <button class="btn btn-sm ">Edit</button>
-                                    <button class="btn btn-sm ">Delete</button>
-                                </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
                 </div>
+            </div>
 
+            <!-- TABLE -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered align-middle text-center">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th>Full Name</th>
+                                        <th>Email Id</th>
+                                        <th>Salary</th>
+                                        <th>City</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Pawan</td>
+                                        <td>pk2369401@hgmail.com</td>
+                                        <td>100000</td>
+                                        <td>Bihar</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Edit</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Rahul</td>
+                                        <td>rahul@gmail.com</td>
+                                        <td>20000</td>
+                                        <td>Delhi</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Edit</button>
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -97,13 +104,16 @@
 
 
 
+
     <script>
+        "use strict";
+        d = 10;
         {
             let a = 10;
             const b = 20;
             var c = a + b;
-            
-            
+
+
         }
         console.log("Sum is:", c);
     </script>
