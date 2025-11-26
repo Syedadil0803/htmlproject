@@ -331,58 +331,61 @@ Boolean = true/false (1/0)
 Number = 123
 
 hoisting
-a variable can be used before declaraion, it called as hositing, to avoid hositing use use the strict mode(use strict) in script. 
+a variable can be used before declaraion, it called as hositing, to avoid hositing  we use the strict mode(use strict) in script. 
 
 Operators =
 
 1. Arithmetic Operators= Used for mathematical calculations.
 
-Operator | Description      | Example            | Result
-a. +         Addition          5 + 3       =          8
-b. -       Subtraction         5 - 3       =          2
-c. *      Multiplication       5 * 3       =          15
-d. /        Division           5 / 2       =          2.5
-e. %    Modulus (remainder)    5 % 2       =          1
-f. **    Exponentiation        5 ** 2      =          25
-g. ++       Increment         let x =5;     x++  =     6
-h. --      Decrement          let x =5;     x--  =     4
+Operator    | Description         | Example               | Result
+a. +           Addition              5 + 3        =           8
+b. -         Subtraction             5 - 3        =          2
+c. *          Multiplication         5 * 3        =          15
+d. /         Division                5 / 2        =          2.5
+e. %         Modulus (remainder)     5 % 2         =          1
+f. **        Exponentiation          5 ** 2        =          25
+g. ++        Increment              let x =5;     x++  =      6
+h. --        Decrement              let x =5;     x--  =      4
 
 
 2. Assignment Operators= Used to assign values to variables.
 
-Operator | Description         | Example        | Equivalent To
-a. =        Assignment            x = 10              x = 10
-b. +=      Add and Assign.        x += 5              x = x + 5
-c. -=    Subtract and Assign      x -= 5              x = x - 5
-d. *=    Multiply and Assign      x *= 5              x = x * 5
-e. /=    Divide and Assign.       x /= 5              x = x / 5
-f. %=    Modulus and Assign       x %= 5              x = x % 5
-g. **=   Exponentiation Assign.   x **= 2             x = x ** 2
+Operator      | Description         | Example        | Equivalent To
+a. =           Assignment            x = 10              x = 10
+b. +=         Add and Assign.        x += 5              x = x + 5
+c. -=       Subtract and Assign      x -= 5              x = x - 5
+d. *=       Multiply and Assign      x *= 5              x = x * 5
+e. /=      Divide and Assign.       x /= 5              x = x / 5
+f. %=      Modulus and Assign       x %= 5              x = x % 5
+g. **=     Exponentiation Assign.   x **= 2             x = x ** 2
 
 3. Comparison Operators = Used to compare two values.
 
-Operator | Description      | Example           | Result
+Operator      | Description            | Example                | Result
 
-a. (==)     Equal to           5== "5"                TRUE
-b. (===)    Strict equal       5===5                 True
-c.  ===       (type+value)       5 === "5"           FALSE
-d. !=       Not equal.           5 != "5"            FALSE
-e. !==    Strict not equal       5 !== "5"           TRUE
-f. >      Greater than           5 > 3               TRUE
-g.<       Less than              5 < 3               FALSE
-h. >=   Greater than or equal    5 >= 5              TRUE
-i. <=    Less than or equal      5 <= 3              FALSE
+a. (==)        Equal to                    5== "5"                 TRUE
+b. (===)       Strict equal                5===5                   True
+c.  ===       (type+value)                 5 === "5"               FALSE
+d. !=          Not equal.                  5 != "5"                FALSE
+e. !==        Strict not equal             5 !== "5"               TRUE
+f. >            Greater than                5 > 3                 TRUE
+g.<            Less than                    5 < 3                FALSE
+h. >=      Greater than or equal            5 >= 5               TRUE
+i. <=        Less than or equal             5 <= 3               FALSE
 
 
 4. Logical Operators = Used for logical operations.
-Operator | Description | Example
-a.  &&     Logical AND. true && false → false
-b. | |      Logical OR.    a || b
-c. !       Logical NOT.   !true → false
+
+Operator      |           Description       |          Example
+a.  &&                  Logical AND.                 true && false → false
+b. | |                  Logical OR.                        a || b
+c. !                    Logical NOT.                  !true → false
+
+
 
 
 5. String Operators=Used to manipulate strings.
 
-Operator   |   Description             | Example                         | Result
+Operator   |   Description                  | Example                       | Result
 a. +         String Concatenation         "Hello" + "World"                "Hello World"
 b. +=       Concatenation assign       let x = "Hi "; x += "Adil";         "Hi Adil"
