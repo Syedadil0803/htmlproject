@@ -314,7 +314,6 @@ b. Number: Integers, floating-point numbers.
 c. Boolean: Logical values (true or false).
 d. Undefined: Variable declared but not assigned a value
 e. Null: Intentional absence of value.
-f. Symbol: Unique identifiers (ES6). (ES6= ECMAScrpit 2015 (ES6))
 
 
 2.  Non-Primitive Data Types
