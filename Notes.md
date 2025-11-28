@@ -389,3 +389,45 @@ c. !                    Logical NOT.                  !true → false
 Operator   |   Description                  | Example                       | Result
 a. +         String Concatenation         "Hello" + "World"                "Hello World"
 b. +=       Concatenation assign       let x = "Hi "; x += "Adil";         "Hi Adil"
+
+
+Array Methods :
+
+1. push()
+Adds an item to the end of an array.
+2. pop()
+
+Removes an item from the end.
+
+3. unshift()
+Adds an item to the beginning.
+
+4. shift()
+Removes an item from the beginning.
+
+5. map()
+Creates a new array by applying a function to each element.
+
+6. filter()
+Returns a new array with only the elements that match the condition.
+
+7. find()
+Returns the first element that matches the condition.
+
+8. findIndex()
+Same as find(), but returns index instead of value.
+
+9. includes()
+Checks if a value exists.
+
+10. slice()
+Copies a portion of the array (does NOT change original).
+
+11. splice()
+Adds/removes elements (modifies original).
+
+12. sort()
+Sorts array (alphabetically by default).
+
+13. reverse()
+Reverses the array.
