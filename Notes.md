@@ -435,83 +435,83 @@ Reverses the array.
 eg :
 
 // let numbers = [10, 20, 30, 40, 50];
-        // numbers.push(60);
-        // console.log("Numbers Array:", numbers);
+ // numbers.push(60);
+ // console.log("Numbers Array:", numbers);
 
-        // let numbers = [10, 20, 30, 40, 50];
-        // numbers.pop();
-        // console.log("Numbers Array after pop:", numbers);
-
-
-        // let numbers = [10, 20, 30, 40, 50];
-        // numbers.shift();
-        // console.log("Numbers Array after shift:", numbers);
-
-        // let numbers = [10, 20, 30, 40, 50];
-        // numbers.unshift(5);
-        // console.log("Numbers Array after unshift:", numbers);
-
-        // let numbers = [10, 20, 30, 40, 50];
-        // let b = numbers.slice(0, 2);
-        // console.log("Sliced Array:", b);
-        // console.log("Original Array after slice:", numbers);
-
-        // let numbers = [10, 20, 30, 40, 50];
-        // let b = numbers.splice(1, 3);
-        // console.log("Spliced Array:", b);
-        // console.log("Original Array after splice:", numbers);
-
-        // let numbers = [10, 20, 30, 40, 50];
-        // let b = numbers.splice(0, 2, 15, 25);
-        // console.log("Spliced Array:", b);
-        // console.log("Original Array after splice:", numbers);
-
-        // let arr = [100, 200, 50, 90, 700]
-        // arr.sort(function (a, b) {
-        //     return a - b;
-        // });
-        // console.log("Sorted Array:", arr);
-
-        // let fruits = ["Banana", "Apple", "Mango", "Orange"];
-        // fruits.sort();
-        // console.log("Sorted Fruits Array:", fruits);
+ // let numbers = [10, 20, 30, 40, 50];
+ // numbers.pop();
+ // console.log("Numbers Array after pop:", numbers);
 
 
-        // let arr = [100, 200, 50, 90, 700]
-        // arr.reverse();
-        // console.log("Reversed Array:", arr);
+ // let numbers = [10, 20, 30, 40, 50];
+ // numbers.shift();
+ // console.log("Numbers Array after shift:", numbers);
 
-        // let nums = [5, 10, 15, 20];
+ // let numbers = [10, 20, 30, 40, 50];
+ // numbers.unshift(5);
+ // console.log("Numbers Array after unshift:", numbers);
 
-        // let result = nums.map(function (value) {
-        //     return value + 10;
-        // });
+ // let numbers = [10, 20, 30, 40, 50];
+ // let b = numbers.slice(0, 2);
+ // console.log("Sliced Array:", b);
+ // console.log("Original Array after slice:", numbers);
 
-        // console.log("Result:", result);
+ // let numbers = [10, 20, 30, 40, 50];
+ // let b = numbers.splice(1, 3);
+ // console.log("Spliced Array:", b);
+ // console.log("Original Array after splice:", numbers);
+
+ // let numbers = [10, 20, 30, 40, 50];
+ // let b = numbers.splice(0, 2, 15, 25);
+ // console.log("Spliced Array:", b);
+ // console.log("Original Array after splice:", numbers);
+
+ // let arr = [100, 200, 50, 90, 700]
+ // arr.sort(function (a, b) {
+ //     return a - b;
+ // });
+ // console.log("Sorted Array:", arr);
+
+ // let fruits = ["Banana", "Apple", "Mango", "Orange"];
+ // fruits.sort();
+ // console.log("Sorted Fruits Array:", fruits);
 
 
-        // let nums = [5, 10, 15, 20];
+ // let arr = [100, 200, 50, 90, 700]
+ // arr.reverse();
+ // console.log("Reversed Array:", arr);
 
-        // let result = nums.find(function (value) {
-        //     return value > 10;
-        // });
+ // let nums = [5, 10, 15, 20];
 
-        // console.log("Find result:", result);
-        // 15
+ // let result = nums.map(function (value) {
+ //     return value + 10;
+ // });
 
-        // console.log("Nums Array after find():", nums);
-        // [5, 10, 15, 20]
+ // console.log("Result:", result);
 
-        // let nums = [5, 10, 15, 20];
 
-        // let index = nums.findIndex(function (value) {
-        //     return value > 10;
-        // });
+ // let nums = [5, 10, 15, 20];
 
-        // console.log("FindIndex result:", index);
-        //  2
+ // let result = nums.find(function (value) {
+ //     return value > 10;
+ // });
 
-        // let nums = [5, 10, 15, 20];
+ // console.log("Find result:", result);
+ // 15
 
-        // console.log(nums.includes(10));   
-        // console.log(nums.includes(25));  
+ // console.log("Nums Array after find():", nums);
+ // [5, 10, 15, 20]
+
+ // let nums = [5, 10, 15, 20];
+
+ // let index = nums.findIndex(function (value) {
+ //     return value > 10;
+ // });
+
+ // console.log("FindIndex result:", index);
+ //  2
+
+ // let nums = [5, 10, 15, 20];
+
+ // console.log(nums.includes(10));   
+ // console.log(nums.includes(25));  
