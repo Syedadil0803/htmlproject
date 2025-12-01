@@ -105,42 +105,64 @@
 
 
     <script>
-        "use strict";
+        // "use strict";
 
-        m=30;
-        console.log("Value of m is :",m);
+        // m=30;
+        // console.log("Value of m is :",m);
 
-        {
-            let a = 10;
-            const b = 20;
-            var c = a + b;
+        // {
+        //     let a = 10;
+        //     const b = 20;
+        //     var c = a + b;
 
 
-        }
-        console.log("Sum is:", c);
+        // }
+        // console.log("Sum is:", c);
 
-        emp = {
-            name: "adil",
-            phone: 1234567890
-        };
+        // emp = {
+        //     name: "adil",
+        //     phone: 1234567890
+        // };
 
-        any = [{
-            name: "adil",
-            phone: 1234567890
-        },
-        {
-            name: "xyz",
-            phone: 9876543210
-        }];
+        // any = [{
+        //     name: "adil",
+        //     phone: 1234567890
+        // },
+        // {
+        //     name: "xyz",
+        //     phone: 9876543210
+        // }];
 
-        function fn(){
-            "use strict";
-            a= 10
-            b= 20
-            c=a+b
-            console.log("Sum inside function is:", c);
-        }
-        fn();
+        // function fn(){
+        //     "use strict";
+        //     a= 10
+        //     b= 20
+        //     c=a+b
+        //     console.log("Sum inside function is:", c);
+        // }
+        // fn();
+
+
+        // let nums = [50, 10, 500, 400, 700, 300];
+        // nums.sort(function (a, b) {
+        //     return a - b;
+        // });
+        // console.log("Sorted nums:", nums);
+
+
+        // let nums = [10, 50, 300, 400, 500, 600, 700, 800];
+        // let nums = [50, 10, 500, 400, 700, 300];
+        // let arr = nums.find(function (value) {
+        //     return value > 500;
+        // });
+        // console.log("Found value is:", arr);
+        // console.log("Original nums:", nums);
+
+        let nums = [10, 50, 300, 400, 500, 600, 700, 800];
+        let arr = nums.findIndex(function (value) {
+            return value > 500;
+        });
+        console.log("Found index is:", arr);
 
 
         

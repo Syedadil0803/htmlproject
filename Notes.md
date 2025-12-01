@@ -395,8 +395,8 @@ Array Methods :
 
 1. push()
 Adds an item to the end of an array.
-2. pop()
 
+2. pop()
 Removes an item from the end.
 
 3. unshift()
@@ -405,32 +405,33 @@ Adds an item to the beginning.
 4. shift()
 Removes an item from the beginning.
 
-5. map()
-Creates a new array by applying a function to each element.
-
-6. filter()
-Returns a new array with only the elements that match the condition.
-
-7. find()
-Returns the first element that matches the condition.
-
-8. findIndex()
-Same as find(), but returns index instead of value.
-
-9. includes()
-Checks if a value exists.
-
-10. slice()
+5. slice()
 Copies a portion of the array (does NOT change original).
 
-11. splice()
+6. splice()
 Adds/removes elements (modifies original).
 
-12. sort()
+7. sort()
 Sorts array (alphabetically by default).
 
-13. reverse()
+8. reverse()
 Reverses the array.
+
+9. find()
+Returns the first element that matches the condition.
+
+10. findIndex()
+Same as find(), but returns index instead of value.
+
+11. filter()
+Returns a new array with only the elements that match the condition.
+
+12. includes()
+Checks if a value exists.
+
+13. map()
+Creates a new array by applying a function to each element.
+
 
 eg :
 
@@ -483,15 +484,6 @@ eg :
 
  // let nums = [5, 10, 15, 20];
 
- // let result = nums.map(function (value) {
- //     return value + 10;
- // });
-
- // console.log("Result:", result);
-
-
- // let nums = [5, 10, 15, 20];
-
  // let result = nums.find(function (value) {
  //     return value > 10;
  // });
@@ -510,6 +502,14 @@ eg :
 
  // console.log("FindIndex result:", index);
  //  2
+
+  // let nums = [5, 10, 15, 20];
+
+ // let result = nums.map(function (value) {
+ //     return value + 10;
+ // });
+
+ // console.log("Result:", result);
 
  // let nums = [5, 10, 15, 20];
 
