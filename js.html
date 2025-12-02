@@ -24,27 +24,31 @@
                         <form>
                             <div class="mb-3">
                                 <label class="form-label">Full Name*</label>
-                                <input type="text" class="form-control" placeholder="Enter full name">
+                                <input type="text" class="form-control" placeholder="Enter full name" id="name">
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Email Id</label>
-                                <input type="email" class="form-control" placeholder="Enter email">
+                                <input type="email" class="form-control" placeholder="Enter email" id="emailid">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Salary</label>
-                                <input type="number" class="form-control" placeholder="Enter salary">
+                                <label class="form-label">Phone</label>
+                                <input type="number" class="form-control" placeholder="Enter Phone" id="phonenumber">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">City</label>
-                                <input type="text" class="form-control" placeholder="Enter city">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="password">
                             </div>
 
+                              <div class="mb-3">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" placeholder="Enter Confirm Password" id="confirmpassword">
+                            </div>
                             <div class="text-end">
-                                <button class="btn btn-dark w-20">Submit</button>
-                                <button class="btn btn-dark w-20">Update</button>
+                                <button class="btn btn-dark w-20" onclick="DisplaData();" type="button">Submit</button>
+                                <button class="btn btn-dark w-20" type="button" >Update</button>
                             </div>
                         </form>
                     </div>
@@ -62,8 +66,7 @@
                                     <tr class="text-nowrap">
                                         <th>Full Name</th>
                                         <th>Email Id</th>
-                                        <th>Salary</th>
-                                        <th>City</th>
+                                        <th>Phone</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -72,8 +75,7 @@
                                     <tr>
                                         <td>Pawan</td>
                                         <td>pk2369401@hgmail.com</td>
-                                        <td>100000</td>
-                                        <td>Bihar</td>
+                                        <td>98765421</td>
                                         <td>
                                             <button class="btn btn-sm btn-primary">Edit</button>
                                             <button class="btn btn-sm btn-danger">Delete</button>
@@ -83,8 +85,7 @@
                                     <tr>
                                         <td>Rahul</td>
                                         <td>rahul@gmail.com</td>
-                                        <td>20000</td>
-                                        <td>Delhi</td>
+                                        <td>123456789</td>
                                         <td>
                                             <div class="d-flex justify-content-center gap-2">
                                                 <button class="btn btn-sm btn-primary">Edit</button>
@@ -158,14 +159,20 @@
         // console.log("Found value is:", arr);
         // console.log("Original nums:", nums);
 
-        let nums = [10, 50, 300, 400, 500, 600, 700, 800];
-        let arr = nums.findIndex(function (value) {
-            return value > 500;
-        });
-        console.log("Found index is:", arr);
+        // let nums = [10, 50, 300, 400, 500, 600, 700, 800];
+        // let arr = nums.findIndex(function (value) {
+        //     return value > 500;
+        // });
+        // console.log("Found index is:", arr);
 
 
-        
+        // let nums = [5, 10, 15, 20];
+
+        // let result = nums.map(function (value) {
+        //     return value + 10;
+        // });
+
+        // console.log("Mapped Result:", result);
 
 
 
@@ -175,6 +182,46 @@
 
 
 
+
+
+
+
+    </script>
+
+    <script>
+        function DisplaData(){
+            var FullName = document.getElementById("name").value;
+            console.log("Full Name is:", FullName);
+            var EmailId = document.getElementById("emailid").value;
+            console.log("Email Id is:", EmailId);
+            var PhoneNumber = document.getElementById("phonenumber").value;
+            console.log("Phone Number is:", PhoneNumber);
+            var Password = document.getElementById("password").value;
+            console.log("Password is:", Password);
+            var ConfirmPassword = document.getElementById("confirmpassword").value;
+            console.log("Confirm Password is:", ConfirmPassword);
+
+            if (FullName == ""){
+                alert("Please enter Full Name");
+            }
+            else if (EmailId == ""){
+                alert("Please enter Email Id");
+            }
+            else if (PhoneNumber == ""){
+                alert("Please enter Phone Number");
+            }
+            else if (Password == ""){
+                alert("Please enter Password");
+            }
+            else if (ConfirmPassword == ""){
+                alert("Please enter Confirm Password");
+            }
+            else{
+                alert("Form submitted successfully!");
+            }
+        }
+    
+   
 
     </script>
 </body>

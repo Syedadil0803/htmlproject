@@ -515,3 +515,11 @@ eg :
 
  // console.log(nums.includes(10));   
  // console.log(nums.includes(25));  
+
+
+ CRUD :
+
+ 1. Create
+ 2. Read
+ 3. Update
+ 4. Delete
