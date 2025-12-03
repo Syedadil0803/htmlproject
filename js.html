@@ -42,15 +42,20 @@
                                 <input type="password" class="form-control" placeholder="Enter Password" id="password">
                             </div>
 
-                              <div class="mb-3">
+                            <div class="mb-3">
                                 <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" placeholder="Enter Confirm Password" id="confirmpassword">
+                                <input type="password" class="form-control" placeholder="Enter Confirm Password"
+                                    id="confirmpassword">
                             </div>
                             <div class="text-end">
                                 <button class="btn btn-dark w-20" onclick="DisplaData();" type="button">Submit</button>
-                                <button class="btn btn-dark w-20" type="button" >Update</button>
+                                <button class="btn btn-dark w-20" type="button">Update</button>
                             </div>
                         </form>
+                        <div class="text-center">
+                            <p class="mt-2" id="message">
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,7 +194,7 @@
     </script>
 
     <script>
-        function DisplaData(){
+        function DisplaData() {
             var FullName = document.getElementById("name").value;
             console.log("Full Name is:", FullName);
             var EmailId = document.getElementById("emailid").value;
@@ -201,27 +206,47 @@
             var ConfirmPassword = document.getElementById("confirmpassword").value;
             console.log("Confirm Password is:", ConfirmPassword);
 
-            if (FullName == ""){
-                alert("Please enter Full Name");
+            if (FullName == "") {
+                document.getElementById("message").innerHTML = '<span style="color:red">Please enter Full Name</span>';
             }
-            else if (EmailId == ""){
-                alert("Please enter Email Id");
+            else if (EmailId == "") {
+                document.getElementById("message").innerHTML = '<span style="color:red">Please enter Email Id</span>';
             }
-            else if (PhoneNumber == ""){
-                alert("Please enter Phone Number");
+            else if (PhoneNumber == "") {
+                document.getElementById("message").innerHTML = '<span style="color:red">Please enter Phone Number</span>';
             }
-            else if (Password == ""){
-                alert("Please enter Password");
+            else if (Password == "") {
+                document.getElementById("message").innerHTML = '<span style="color:red">Please enter Password</span>';
             }
-            else if (ConfirmPassword == ""){
-                alert("Please enter Confirm Password");
+            else if (Password.length < 8) {
+                document.getElementById("message").innerHTML = '<span style="color:red">Password must be at least 8 characters long</span>';
             }
-            else{
-                alert("Form submitted successfully!");
+            else if (!/[0-9]/.test(Password)) {
+                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one digit</span>';
+            }
+            else if (!/[a-z]/.test(Password)) {
+                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one lowercase letter</span>';
+            }
+            else if (!/[A-Z]/.test(Password)) {
+                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one uppercase letter</span>';
+            }
+            else if (!/[@#$%^&*]/.test(Password)) {
+                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one special character (@, #, $, %, ^, &, *)</span>';
+            }
+            else if (ConfirmPassword == "") {
+                document.getElementById("message").innerHTML = '<span style="color:red">Please enter Confirm Password</span>';
+            }
+            else if (Password != ConfirmPassword) {
+                document.getElementById("message").innerHTML = '<span style="color:red">Password and Confirm Password do not match</span>';
+            }
+            else {
+                document.getElementById("message").innerHTML = '<span style="color:green">Form submitted successfully!</span>';
             }
         }
-    
-   
+
+    </script>
+
+    <script>
 
     </script>
 </body>
