@@ -76,8 +76,8 @@
                                     </tr>
                                 </thead>
 
-                                <tbody>
-                                    <tr>
+                                <tbody id="usersdata">
+                                    <!-- <tr>
                                         <td>Pawan</td>
                                         <td>pk2369401@hgmail.com</td>
                                         <td>98765421</td>
@@ -97,7 +97,7 @@
                                                 <button class="btn btn-sm btn-danger">Delete</button>
                                             </div>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -218,21 +218,21 @@
             else if (Password == "") {
                 document.getElementById("message").innerHTML = '<span style="color:red">Please enter Password</span>';
             }
-            else if (Password.length < 8) {
-                document.getElementById("message").innerHTML = '<span style="color:red">Password must be at least 8 characters long</span>';
-            }
-            else if (!/[0-9]/.test(Password)) {
-                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one digit</span>';
-            }
-            else if (!/[a-z]/.test(Password)) {
-                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one lowercase letter</span>';
-            }
-            else if (!/[A-Z]/.test(Password)) {
-                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one uppercase letter</span>';
-            }
-            else if (!/[@#$%^&*]/.test(Password)) {
-                document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one special character (@, #, $, %, ^, &, *)</span>';
-            }
+            // else if (Password.length < 8) {
+            //     document.getElementById("message").innerHTML = '<span style="color:red">Password must be at least 8 characters long</span>';
+            // }
+            // else if (!/[0-9]/.test(Password)) {
+            //     document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one digit</span>';
+            // }
+            // else if (!/[a-z]/.test(Password)) {
+            //     document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one lowercase letter</span>';
+            // }
+            // else if (!/[A-Z]/.test(Password)) {
+            //     document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one uppercase letter</span>';
+            // }
+            // else if (!/[@#$%^&*]/.test(Password)) {
+            //     document.getElementById("message").innerHTML = '<span style="color:red">Password must contain at least one special character (@, #, $, %, ^, &, *)</span>';
+            // }
             else if (ConfirmPassword == "") {
                 document.getElementById("message").innerHTML = '<span style="color:red">Please enter Confirm Password</span>';
             }
@@ -241,7 +241,26 @@
             }
             else {
                 document.getElementById("message").innerHTML = '<span style="color:green">Form submitted successfully!</span>';
+                DisplayUser(FullName, EmailId, PhoneNumber);
             }
+        }
+
+        var users = [];
+        function DisplayUser(FullName, EmailId, PhoneNumber){
+            users.push({
+                name: FullName,
+                email: EmailId,
+                phone: PhoneNumber
+            });
+            console.log("Users Array:", users);
+
+          var rows = "";
+          for (i = 0; i < users.length; i++){
+            rows = rows + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td></tr>";
+          }
+          document.getElementById("usersdata").innerHTML = rows;
+    
+
         }
 
     </script>
