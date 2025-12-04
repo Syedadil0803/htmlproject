@@ -16,12 +16,12 @@
 
         <div class="row">
             <!-- FORM -->
-            <div class="col-md-6">
+            <div class="col-md-6" >
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
                         <h3 class="mb-4">Employee Form</h3>
 
-                        <form>
+                        <form id="formdata">
                             <div class="mb-3">
                                 <label class="form-label">Full Name*</label>
                                 <input type="text" class="form-control" placeholder="Enter full name" id="name">
@@ -106,6 +106,7 @@
             </div>
         </div>
     </div>
+
 
 
 
@@ -239,9 +240,13 @@
             else if (Password != ConfirmPassword) {
                 document.getElementById("message").innerHTML = '<span style="color:red">Password and Confirm Password do not match</span>';
             }
+            else if(IsDuplicatePhone(PhoneNumber)){
+                document.getElementById("message").innerHTML = '<span style="color:red">User with this Phone Number already exist!</span>';
+            }
             else {
                 document.getElementById("message").innerHTML = '<span style="color:green">Form submitted successfully!</span>';
                 DisplayUser(FullName, EmailId, PhoneNumber);
+                Clearform();
             }
         }
 
@@ -258,13 +263,34 @@
             for (i = 0; i < users.length; i++) {
                 rows = rows +
                     "<tr>" +
-                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
+                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i +")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
             }
             document.getElementById("usersdata").innerHTML = rows;
 
 
         }
+        function Clearform(){
+            document.getElementById("formdata").reset();
+        }
+
+        function IsDuplicatePhone(PhoneNumber){
+            for(i=0; i<users.length; i++){
+                if(users[i].phone == PhoneNumber){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        function EditUser(i){
+            document.getElementById("name").value = users[i].name
+            document.getElementById("emailid").value = users[i].email;
+            document.getElementById("phonenumber").value = users[i].phone;
+        }
+
+
 
     </script>
 
