@@ -258,16 +258,7 @@
             for (i = 0; i < users.length; i++) {
                 rows = rows +
                     "<tr>" +
-                    "<td>" + users[i].name + "</td>" +
-                    "<td>" + users[i].email + "</td>" +
-                    "<td>" + users[i].phone + "</td>" +
-                    "<td>" +
-                    "<div class='d-flex justify-content-center gap-2'>" +
-                    "<button class='btn btn-sm btn-primary'>Edit</button>" +
-                    "<button class='btn btn-sm btn-danger'>Delete</button>" +
-                    "</div>" +
-                    "</td>" +
-                    "</tr>";
+                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
             }
             document.getElementById("usersdata").innerHTML = rows;
