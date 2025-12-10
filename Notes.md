@@ -523,3 +523,30 @@ eg :
  2. Read
  3. Update
  4. Delete
+
+ 1. Understanding Cookies :
+
+Cookies are small pieces of data stored in the browser. They help websites remember information about users, like login status, preferences, or shopping cart items.
+
+Stored as name=value pairs.
+Useful for tracking small data across sessions.
+
+
+2. how we write a cookie :
+document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2024 23:59:59 GMT; path=/";
+
+3. how we read a cookie :
+console.log(document.cookie);
+// Output: "username=JohnDoe;"
+
+
+4. Deleting Cookies :
+To delete a cookie, set its expiration date to the past:
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+5. Counting with Cookies :
+It Say you want to count how many times the user visited the page.
+
+count = "1...n"
+string concat + count +
+template literals `${count}`
