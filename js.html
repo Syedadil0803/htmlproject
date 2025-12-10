@@ -16,7 +16,7 @@
 
         <div class="row">
             <!-- FORM -->
-            <div class="col-md-6" >
+            <div class="col-md-6">
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
                         <h3 class="mb-4">Employee Form</h3>
@@ -49,7 +49,7 @@
                             </div>
                             <div class="text-end">
                                 <button class="btn btn-dark w-20" onclick="DisplaData();" type="button">Submit</button>
-                                <button class="btn btn-dark w-20" type="button">Update</button>
+                                <button class="btn btn-dark w-20" onclick="UpdateUSer();" type="button">Update</button>
                             </div>
                         </form>
                         <div class="text-center">
@@ -240,7 +240,7 @@
             else if (Password != ConfirmPassword) {
                 document.getElementById("message").innerHTML = '<span style="color:red">Password and Confirm Password do not match</span>';
             }
-            else if(IsDuplicatePhone(PhoneNumber)){
+            else if (IsDuplicatePhone(PhoneNumber)) {
                 document.getElementById("message").innerHTML = '<span style="color:red">User with this Phone Number already exist!</span>';
             }
             else {
@@ -263,20 +263,20 @@
             for (i = 0; i < users.length; i++) {
                 rows = rows +
                     "<tr>" +
-                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i +")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
+                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button onclick='DeleteUser(" + i + ")' class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
             }
             document.getElementById("usersdata").innerHTML = rows;
 
 
         }
-        function Clearform(){
+        function Clearform() {
             document.getElementById("formdata").reset();
         }
 
-        function IsDuplicatePhone(PhoneNumber){
-            for(i=0; i<users.length; i++){
-                if(users[i].phone == PhoneNumber){
+        function IsDuplicatePhone(PhoneNumber) {
+            for (i = 0; i < users.length; i++) {
+                if (users[i].phone == PhoneNumber) {
                     return true;
                 }
             }
@@ -284,13 +284,41 @@
         }
 
 
-        function EditUser(i){
+        var Index = i;
+        function EditUser(i) {
+            Index = i
             document.getElementById("name").value = users[i].name
             document.getElementById("emailid").value = users[i].email;
             document.getElementById("phonenumber").value = users[i].phone;
         }
 
+        function UpdateUSer() {
+            users[Index].name = document.getElementById("name").value;
+            users[Index].email = document.getElementById("emailid").value;
+            users[Index].phone = document.getElementById("phonenumber").value;
+            var rows = "";
+            for (i = 0; i < users.length; i++) {
+                rows = rows +
+                    "<tr>" +
+                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
+            }
+            document.getElementById("usersdata").innerHTML = rows;
+
+        }
+
+        function DeleteUser(i) {
+            users.splice(i, 1);
+            var rows = "";
+            for (i = 0; i < users.length; i++) {
+                rows = rows +
+                    "<tr>" +
+                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
+
+            }
+            document.getElementById("usersdata").innerHTML = rows;
+        }
+       
 
     </script>
 
