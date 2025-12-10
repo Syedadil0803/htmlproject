@@ -544,9 +544,78 @@ console.log(document.cookie);
 To delete a cookie, set its expiration date to the past:
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
-5. Counting with Cookies :
-It Say you want to count how many times the user visited the page.
+CallBack fns :
 
-count = "1...n"
-string concat + count +
-template literals `${count}`
+1. map()
+The map() method is used to loop through an array and create a new array with the result of applying a function to each element.
+
+2. setTimeout()
+The setTimeout() method runs a function once after a specified delay (in milliseconds).
+
+3. setInterval()
+The setInterval() method runs a function repeatedly, at a fixed time interval (in milliseconds), until stopped.
+
+
+
+1. create a function to double the give array [1,2,3]
+
+
+eg :
+
+let nums = [1, 2, 3];
+let doubled = nums.map(num => num * 2);
+console.log(doubled); // Output: [2, 4, 6]
+
+(num => num * 2)
+
+num = 1 * 2 (0)
+num = 2 *2 (1)
+num = 3 * 2 (2)
+
+Async/Await
+javascript async and await;
+1.to create responsive applications in javascript
+2.to execute concurrent process
+3.no block state or no need to wait till function ends.
+4.async and await are used in JavaScript to work with asynchronous operations more easily.
+5.They allow code to wait for long tasks (like fetching data) without stopping the entire program.
+
+
+async -> Marks a function that may run tasks which take time(but returns promise(1/0)).
+await -> Pauses the function until the function(promise) finishes, but does not block other code.
+Used for -> API calls, database operations, file reading, timers, etc.
+Benefit -> Code becomes easier to read and understand (looks like normal step-by-step code).
+
+Real-Life Example 
+
+Example: Ordering Food in a Restaurant
+
+1.You order biryani (this takes time to prepare).
+
+2. But you don’t stand in the kitchen waiting (that would block everything).
+
+3. Instead, you sit and talk with friends (other work continues).
+
+4. When the biryani is ready, the waiter delivers it (result comes later).
+
+This is async behavior:
+
+1.Order placed = Request sent
+
+2. Waiter prepares silently = Awaiting result
+
+3. You keep doing other things = Non-blocking
+
+4. Food delivered = function(promise) resolved
+
+
+javascript promise
+
+
+1.it is a special javascript object
+2.it will return either resolved or rejected status
+3.it always returns response, it wont break during transaction/process
+4.reject and resolve both are callback functions it will execute either anyone
+5.we access promise by method :
+then()
+catch()
