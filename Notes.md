@@ -524,11 +524,13 @@ eg :
  3. Update
  4. Delete
 
+JWT
+
  1. Understanding Cookies :
 
 Cookies are small pieces of data stored in the browser. They help websites remember information about users, like login status, preferences, or shopping cart items.
 
-Stored as name=value pairs.
+Stored as name=value(key=value) pairs.
 Useful for tracking small data across sessions.
 
 
