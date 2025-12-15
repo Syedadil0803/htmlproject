@@ -574,6 +574,45 @@ num = 1 * 2 (0)
 num = 2 *2 (1)
 num = 3 * 2 (2)
 
+2. Convert all names in the array to uppercase.
+let names = ["adil", "syed", "ali"];
+
+Expected Output: ["ADIL", "SYED", "ALI"]
+
+3. Extract only the price values from the products array.
+let products = [
+  { name: "Pen", price: 10 },
+  { name: "Book", price: 50 },
+  { name: "Bag", price: 500 }
+];
+
+Expected Output: [10, 50, 500]
+
+4. Add a new property isAvailable: true to every product.
+let products = [
+  { name: "Pen" },
+  { name: "Book" }
+];
+
+Expected Output: [
+  { name: "Pen", isAvailable: true },
+  { name: "Book", isAvailable: true }
+]
+
+5. Add ₹ symbol to each salary amount.
+let salaries = [25000, 32000, 45000];
+
+Expected Output: ["₹25000", "₹32000", "₹45000"]
+
+6. Given an array of marks, convert them into Pass or Fail.
+Marks 40 and above → "Pass"
+Below 40 → "Fail"
+let marks = [78, 35, 90, 28, 45];
+
+
+Expected Output: ["Pass", "Fail", "Pass", "Fail", "Pass"]
+
+
 Async/Await
 javascript async and await;
 1.to create responsive applications in javascript
