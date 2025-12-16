@@ -561,7 +561,6 @@ The setInterval() method runs a function repeatedly, at a fixed time interval (i
 
 1. create a function to double the give array [1,2,3]
 
-
 eg :
 
 let nums = [1, 2, 3];
@@ -590,7 +589,7 @@ Expected Output: [10, 50, 500]
 
 4. Add a new property isAvailable: true to every product.
 let products = [
-  { name: "Pen" },
+  { name: "Pen"  },
   { name: "Book" }
 ];
 
@@ -605,13 +604,12 @@ let salaries = [25000, 32000, 45000];
 Expected Output: ["₹25000", "₹32000", "₹45000"]
 
 6. Given an array of marks, convert them into Pass or Fail.
-Marks 40 and above → "Pass"
-Below 40 → "Fail"
-let marks = [78, 35, 90, 28, 45];
+Marks 40 and above -> "Pass"
+Below 40 -> "Fail"
+let marks = [78, 35, 90, 28, 45, 20];
 
 
 Expected Output: ["Pass", "Fail", "Pass", "Fail", "Pass"]
-
 
 Async/Await
 javascript async and await;

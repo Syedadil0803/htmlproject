@@ -266,10 +266,10 @@
             //         "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button onclick='DeleteUser(" + i + ")' class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
             // }
-             users.map((user, index) => {
+            users.map((user, index) => {
                 // user.name
                 // users[0].name
-                rows = rows + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + index + ") class='btn btn-sm btn-primary'>Edit</button><button onclick='DeleteUser(" + index + ")' class='btn btn-sm btn-danger'>Delete</button></div></td></tr>"
+                rows = rows + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + index + ")' class='btn btn-sm btn-primary'>Edit</button><button onclick='DeleteUser(" + index + ")' class='btn btn-sm btn-danger'>Delete</button></div></td></tr>"
             })
             document.getElementById("usersdata").innerHTML = rows;
 
@@ -302,12 +302,17 @@
             users[Index].email = document.getElementById("emailid").value;
             users[Index].phone = document.getElementById("phonenumber").value;
             var rows = "";
-            for (i = 0; i < users.length; i++) {
-                rows = rows +
-                    "<tr>" +
-                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
+            // for (i = 0; i < users.length; i++) {
+            //     rows = rows +
+            //         "<tr>" +
+            //         "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
-            }
+            // }
+            users.map((user, index) => {
+                // user.name
+                // users[0].name
+                rows = rows + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + index + ")' class='btn btn-sm btn-primary'>Edit</button><button onclick='DeleteUser(" + index + ")' class='btn btn-sm btn-danger'>Delete</button></div></td></tr>"
+            })
             document.getElementById("usersdata").innerHTML = rows;
 
         }
@@ -315,15 +320,20 @@
         function DeleteUser(i) {
             users.splice(i, 1);
             var rows = "";
-            for (i = 0; i < users.length; i++) {
-                rows = rows +
-                    "<tr>" +
-                    "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
+            // for (i = 0; i < users.length; i++) {
+            //     rows = rows +
+            //         "<tr>" +
+            //         "<td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + i + ")' class='btn btn-sm btn-primary'>Edit</button><button class='btn btn-sm btn-danger'>Delete</button></div></td></tr>";
 
-            }
+            // }
+            users.map((user, index) => {
+                // user.name
+                // users[0].name
+                rows = rows + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><div class='d-flex justify-content-center gap-2'><button onclick='EditUser(" + index + ")' class='btn btn-sm btn-primary'>Edit</button><button onclick='DeleteUser(" + index + ")' class='btn btn-sm btn-danger'>Delete</button></div></td></tr>"
+            })
             document.getElementById("usersdata").innerHTML = rows;
         }
-       
+
 
     </script>
 
