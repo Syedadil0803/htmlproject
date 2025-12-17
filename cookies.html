@@ -9,6 +9,7 @@
 
 <body>
     <div>Cookie Page</div>
+    <h1 id="displaytime"></h1>
 
 
     <script>
@@ -39,55 +40,100 @@
         // console.log(arrowmapped);
 
 
-        let names = ["adil", "syed", "ali"]
-        let uppercasedNames = names.map(name => name.toUpperCase());
-        console.log(uppercasedNames);
+        // let names = ["adil", "syed", "ali"]
+        // let uppercasedNames = names.map(name => name.toUpperCase());
+        // console.log(uppercasedNames);
 
-        let products = [
-            { name: "Pen", price: 10 },
-            { name: "Book", price: 50 },
-            { name: "Bag", price: 500 }
-        ];
+        // let products = [
+        //     { name: "Pen", price: 10 },
+        //     { name: "Book", price: 50 },
+        //     { name: "Bag", price: 500 }
+        // ];
 
-        let extractedPrice = products.map(product => product.price);
-        console.log(extractedPrice)
-
-
-        let productsavailability = [
-            { name: "Pen" },
-            { name: "Paper" },
-            { name: "Book" },
-            { name: "Ink" }
-
-        ];
+        // let extractedPrice = products.map(product => product.price);
+        // console.log(extractedPrice)
 
 
-        let updatedProducts = productsavailability.map(product => {
-            product.isAvailable = true;
-            return product;
-        });
-        console.log(updatedProducts)
+        // let productsavailability = [
+        //     { name: "Pen" },
+        //     { name: "Paper" },
+        //     { name: "Book" },
+        //     { name: "Ink" }
+
+        // ];
+
+
+        // let updatedProducts = productsavailability.map(product => {
+        //     product.isAvailable = true;
+        //     return product;
+        // });
+        // console.log(updatedProducts)
 
 
 
-        let salaries = [25000, 32000, 45000];
+        // let salaries = [25000, 32000, 45000];
 
-        let modifiedSalaries = salaries.map(salary => "₹" + salary);
-        console.log(modifiedSalaries);
+        // let modifiedSalaries = salaries.map(salary => "₹" + salary);
+        // console.log(modifiedSalaries);
 
 
-        let marks = [78, 35, 90, 28, 45, 20];
+        // let marks = [78, 35, 90, 28, 45, 20];
 
-        let result = marks.map(mark => {
-            if (mark >= 40) {
-                return "Pass";
+        // let result = marks.map(mark => {
+        //     if (mark >= 40) {
+        //         return "Pass";
+        //     } else {
+        //         return "Fail";
+        //     }
+        // });
+
+        // console.log(result);
+
+
+
+        // var date = new Date();
+        // console.log(date);
+        // document.getElementById("displaytime").innerHTML = date.toLocaleTimeString();
+
+
+        // setInterval(()=>{
+        //     var date = new Date();
+        //     console.log(date);
+        //     document.getElementById("displaytime").innerHTML = date.toLocaleTimeString();
+        // }, 500);
+
+
+        // setTimeout(() => {
+        //     alert("Hello, this is a delayed alert!");
+        // }, 5000);
+
+        function checkage(age){
+            if (age < 18) {
+                console.log("age is valid.");
             } else {
-                return "Fail";
-            }
+                console.log("age is not valid.");
+            }       
+        }
+
+        checkage();
+
+        function checkagewithpromise(age){
+            return new Promise((resolve, reject) => {
+                if (age < 18) {
+                    resolve("Age is not valid.");
+                } else {
+                    reject("Age is valid.");
+                }
+            });
+        }
+
+        checkagewithpromise(2)
+        .then((message) => {
+            console.log("Resolved: ", message);
+        })
+        .catch((error) => {
+            console.log("Rejected: ", error);
         });
-
-        console.log(result);
-
 
 
     </script>
