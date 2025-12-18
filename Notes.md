@@ -658,3 +658,7 @@ javascript promise
 5.we access promise by method :
 then()
 catch()
+
+media queries
+
+Apply this CSS only when the screen size matches a condition.
