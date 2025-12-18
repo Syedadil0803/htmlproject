@@ -659,6 +659,52 @@ javascript promise
 then()
 catch()
 
-media queries
+React Notes
 
-Media queries allow CSS to change the layout based on screen size, without using JavaScript.
+React Js
+1. it is a javascript libarary
+2.React js is used to create ui components
+3.virtual DOM support
+4.its very fast and performance
+5.single page application(SPA) development
+6.component based architectire
+7.server side rendering
+
+
+setup
+
+1. navigate to project folder/directory
+cmd : cd foldername
+
+2.how to create react setup
+cmd: npm install create-react-app
+
+3.how to create react project
+cmd: npx create-react-app reactproject
+note: project name should be in small letters
+
+4. run/execute react project
+cmd: npm start
+
+
+Component Syntax
+
+1. Create a js file,
+2. create a funciton 
+3. Return the function
+4. export the function
+5. import the function in app.js/index.js
+6. render(call) the function in app.js/index.js
+
+function Demo() {
+  return (
+    <div>
+      <h1>This is Demo Function from demo.js file</h1>
+    </div>
+  );
+}
+export default Demo();
+
+1. function/component 
+2. component defination
+3. component calling(exporting) [to reuse this same component we must import the exported component to the file we are expecting to use it]
