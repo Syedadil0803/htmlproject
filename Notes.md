@@ -661,4 +661,4 @@ catch()
 
 media queries
 
-Apply this CSS only when the screen size matches a condition.
+Media queries allow CSS to change the layout based on screen size, without using JavaScript.
