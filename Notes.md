@@ -671,6 +671,9 @@ React Js
 7.server side rendering
 
 
+
+project => local ip => which port => (mapping) which domain
+
 setup
 
 1. navigate to project folder/directory
@@ -690,7 +693,7 @@ cmd: npm start
 Component Syntax
 
 1. Create a js file,
-2. create a funciton 
+2. write a funciton 
 3. Return the function
 4. export the function
 5. import the function in app.js/index.js
