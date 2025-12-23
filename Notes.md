@@ -743,5 +743,32 @@ link - to
 <Route>
 <Routes>
 
+React routing
+
+To Implement single page application
+To navigate one page to another page using routing
+
+React Routing Component
+1. BrowserRouter -> to handel browser navigation action 
+2. Routes -> Routes Will have route Configuration
+3. Route -> Route Path to be rendered Component based on ink url text
+4. Link -> to link to the path 
+
+To setup react routing need to install routing package 
+
+npm install react-router-dom
+
+Flow of Routes
+Link => To
+
+To => path
+
+Routes => Route 
+
+Route => path,component
+
+index.js => BrowserRoutes 
 
 js vs jsx
+
+JavaScript is a programming language, while JSX is a syntax extension used in React that allows writing HTML-like code inside JavaScript, which is later compiled into JavaScript.
