@@ -715,11 +715,10 @@ export default Demo();
 
 Bootstrap setup 
 1.
-npm install bootstrap@4.6.0
+npm install bootstrap@5.0.2
 
 2. to check installation status
 npm list bootstrap
-
 
 3.import css files
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -729,3 +728,20 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 5.uninstall
 npm uninstall bootstrap
+
+
+React Routing
+1. npm install react-router-dom
+
+2. import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
+link - to
+
+<Routes>
+<Route>
+<Route>
+<Route>
+<Routes>
+
+
+js vs jsx
