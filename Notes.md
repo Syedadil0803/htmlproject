@@ -751,7 +751,7 @@ To navigate one page to another page using routing
 React Routing Component
 1. BrowserRouter -> to handel browser navigation action 
 2. Routes -> Routes Will have route Configuration
-3. Route -> Route Path to be rendered Component based on ink url text
+3. Route -> Route Path to be rendered Component based on link url text
 4. Link -> to link to the path 
 
 To setup react routing need to install routing package 
