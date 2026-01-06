@@ -782,12 +782,19 @@ React hook
 .It lets you run some code after the component renders (or when certain things change)
 .It’s like saying: "Hey React, when you show this component on the screen, run this code."
 
+json server :
 
+setup : 
+npm install json-server
+
+
+start server : 
+npx json-server db.json(database/ api data file name)
 
 Component
 --> componet is a unit of logic, it contains javascript, css and html.
 --> it will return always html elements
---> Every Component must be exported an Impoeted Before call/Access
+--> Every Component must be exported and Imported Before call/Access
 
 It has 2 types of components
 1. Functional Component
@@ -823,3 +830,9 @@ Class Components
 2. Uses lifecycle methods
 3. More repeated code
 4. Mostly used only in legacy projects
+
+class syntax
+
+import react
+
+class extends react 
