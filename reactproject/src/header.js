@@ -3,8 +3,20 @@ import ServicesComponent from "./services";
 import CallComponent from "./call";
 import EmailComponent from "./email";
 import { Route, Routes, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function HeaderComponent() {
+
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then((response) => response.json())
+            .then((data) => setUsers(data))
+            .catch((error) => console.error("Error fetching users:", error));
+    }, []);
+
+    console.log("Fetched users in Header Component:", users);
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,7 +30,7 @@ function HeaderComponent() {
                             <li className="nav-item">
                                 <Link className="nav-link" to={"/users"}>Users</Link>
                             </li>
-                             <li className="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to={"/services"}>Services</Link>
                             </li>
                             <li className="nav-item dropdown">
@@ -40,9 +52,9 @@ function HeaderComponent() {
             </nav>
             <Routes>
                 <Route path="/" />
-                <Route path="/users" element={<UsersComponent />} />
-                <Route path="/services" element={<ServicesComponent />} />
-                <Route path="/call" element={<CallComponent />} />
+                <Route path="/users" element={<UsersComponent usersdata={users} />} />
+                <Route path="/services" element={<ServicesComponent listofusers={users} />} />
+                <Route path="/call" element={<CallComponent listofusers={users} />} />
                 <Route path="/email" element={<EmailComponent />} />
             </Routes>
         </header>

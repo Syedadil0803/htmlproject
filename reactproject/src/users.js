@@ -1,18 +1,6 @@
-import { useState, useEffect } from "react";
+function UsersComponent({ usersdata = [] }) {
 
-function UsersComponent() {
-
-
-    const [users, setUsers] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:3000/users")
-            .then((response) => response.json())
-            .then((data) => setUsers(data))
-            .catch((error) => console.error("Error fetching users:", error));
-    }, []);
-
-    console.log(users);
+    console.log("Users data in Users Component:", usersdata);
 
     return (
         <table className="table">
@@ -24,7 +12,7 @@ function UsersComponent() {
                 </tr>
             </thead>
             <tbody>
-                {users.map((user) => (
+                {usersdata.map((user) => (
                     <tr key={user.id}>
                         <td>{user.name}</td>
                         <td>{user.email}</td>
