@@ -831,8 +831,33 @@ Class Components
 3. More repeated code
 4. Mostly used only in legacy projects
 
-class syntax
 
-import react
+1. Props ->
 
-class extends react 
+.It lets you send data from a parent component to a child component.
+.Think of it like giving information to a child — the child can use it but cannot change it.
+.Props are read-only.
+
+2. State ->
+
+.It lets you store data inside a component.
+.Think of it like a private box that belongs only to that component.
+.When state changes, the UI updates automatically.
+
+3. Constructor ->
+
+.It runs once when a class component is created.
+.It is used to set up initial state or do initial configuration.
+.Think of it like setting up things before using the component.
+
+4. super(props) ->
+
+.It lets React initialize props inside a class component.
+.Without it, this.props will not work inside the constructor.
+.Props accessed using super(props) are still read-only.
+
+5. render() ->
+
+.It decides what should appear on the screen.
+.Whenever state or props change, render() runs again.
+.Think of it like drawing the UI.
