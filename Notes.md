@@ -519,10 +519,10 @@ eg :
 
  CRUD :
 
- 1. Create
- 2. Read
- 3. Update
- 4. Delete
+ 1. Create - POST
+ 2. Read - GET
+ 3. Update - PUT
+ 4. Delete - Delete
 
 JWT
 
