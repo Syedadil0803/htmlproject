@@ -861,3 +861,17 @@ Class Components
 .It decides what should appear on the screen.
 .Whenever state or props change, render() runs again.
 .Think of it like drawing the UI.
+
+
+React Component Lifecycle :
+
+-The component lifecycle describes the different stages a React component goes through from the time it is created until it is removed from the screen.
+
+Phases :
+
+React components have 3 main lifecycle phases:
+
+1. Mounting – Component is created and shown on screen
+2. Updating – Component re-renders when state or props change
+3. Unmounting – Component is removed from the screen
+
