@@ -137,8 +137,8 @@ webstorage (5mb)
 
 2. session storage
 
-Cookies = Login, session, security, authentication
-Web Storage = Big data storage, app data, offline data
+Cookies = user identity & authentication between browser and server
+Web Storage = frontend application state & user preferences
 
 
 Local
